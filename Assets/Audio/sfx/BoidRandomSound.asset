@@ -6,8 +6,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: distant-glow_trim_{-394416628501480546}
-  m_AudioClip: {fileID: 8300000, guid: cacd5ac87995cae48bf061745ae39f8c, type: 3}
+  m_Name: distant-glow-trim_{-394416628501480546}
+  m_AudioClip: {fileID: 8300000, guid: 6e49bdbe18f7d704b9bd277129c9a704, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
@@ -22,7 +22,7 @@ AudioRandomContainer:
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
   m_VolumeRandomizationRange: {x: 0, y: 0}
-  m_PitchRandomizationRange: {x: -600, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 200}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
