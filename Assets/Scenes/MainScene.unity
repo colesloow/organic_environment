@@ -614,7 +614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1943938659
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 2124097275}
   - component: {fileID: 2124097274}
   - component: {fileID: 2124097273}
+  - component: {fileID: 2124097277}
   m_Layer: 0
   m_Name: RaymarchSphere
   m_TagString: Untagged
@@ -818,6 +819,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2124097277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124097272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f2f5365dba56b418b6934c3858a6d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BubbleColorPalette
+  targetRenderer: {fileID: 2124097274}
+  palette:
+  - {r: 0.899371, g: 0.38746482, b: 0.87949014, a: 1}
+  - {r: 0.40566027, g: 1, b: 0.95051455, a: 1}
+  - {r: 0.27987415, g: 0.4810329, b: 1, a: 1}
+  - {r: 1, g: 0.466876, b: 0.3238992, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
