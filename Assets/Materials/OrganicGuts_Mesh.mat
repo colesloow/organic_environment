@@ -95,8 +95,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DispAmp: 5.23
-    - _DispFreq: 0.2
+    - _DispAmp: 5
+    - _DispFreq: 0.13
     - _Displacement: 2
     - _DstBlend: 0
     - _DstBlendAlpha: 0
