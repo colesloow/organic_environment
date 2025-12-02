@@ -35,6 +35,10 @@ Shader "Custom/RaymarchingBubbles"
     _AmbientStrength("Ambient Strength", Float) = 0.2
     _SpecularStrength("Specular Strength", Float) = 0.6
     _SpecularPower("Specular Power", Float) = 32.0
+    
+    // EMISSION
+    [Header(Emission Settings)] [Space(5)]
+    _EmissionStrength("Bubble Emission Strength", Float) = 0.0
 
     // ALPHA / TRANSPARENCY
     [Header(Transparency Settings)] [Space(5)]
@@ -99,6 +103,7 @@ Shader "Custom/RaymarchingBubbles"
             float  _AmbientStrength;
             float  _SpecularStrength;
             float  _SpecularPower;
+            float _EmissionStrength;
 
             float  _Opacity;
             float  _AlphaDepthFactor;
@@ -320,6 +325,10 @@ Shader "Custom/RaymarchingBubbles"
                 float3 lighting = ambient + diffuse + spec;
 
                 float3 col = bubbleColorMixed * lighting;
+
+                // Emission
+                float3 emission = bubbleColorMixed * _EmissionStrength;
+                col += emission;
 
                 // Depth-based attenuation
                 float depthInside = t - tEnter;
