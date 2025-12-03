@@ -14,17 +14,21 @@ public class ConfineToSphere : MonoBehaviour
     private void Update()
     {
         var center = sphereCollider.transform.TransformPoint(sphereCollider.center);
-        var radius = sphereCollider.radius * Mathf.Max(
+        var maxRadius = sphereCollider.radius * Mathf.Max(
             sphereCollider.transform.localScale.x,
             sphereCollider.transform.localScale.y,
-            sphereCollider.transform.localScale.z) - padding;
-
+            sphereCollider.transform.localScale.z);
+        
         var offset = targetTransform.position - center;
+        var distanceFromCenter = offset.magnitude;
 
-        if (offset.sqrMagnitude > radius * radius)
+        if (!(distanceFromCenter <= maxRadius)) return;
+        
+        var confinedRadius = maxRadius - padding;
+            
+        if (distanceFromCenter > confinedRadius)
         {
-            // Ramener le joueur à l'intérieur
-            targetTransform.position = center + offset.normalized * radius;
+            targetTransform.position = center + offset.normalized * confinedRadius;
         }
     }
 }
