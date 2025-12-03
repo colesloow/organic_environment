@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OrganicGuts_Mesh
+  m_Name: Guts_SkySphere
   m_Shader: {fileID: 4800000, guid: 3d1ff52bebc42fd47a1b5f0f4526e99e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -95,8 +95,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DispAmp: 5
-    - _DispFreq: 0.13
+    - _DispAmp: 0
+    - _DispFreq: 10
     - _Displacement: 2
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -109,9 +109,9 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RenderMode: 0
+    - _RenderMode: 1
     - _Rotation: 0.5
-    - _Scale: 0.75
+    - _Scale: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -127,7 +127,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainTint: {r: 1, g: 0.5377357, b: 0.6898425, a: 1}
+    - _MainTint: {r: 0.9932566, g: 0.63207537, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
