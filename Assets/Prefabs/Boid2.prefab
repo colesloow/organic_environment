@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4782,7 +4782,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3340cc701dc4b645bc36820c01ff0dc, type: 2}
+  - {fileID: 2100000, guid: 774cae9e37579b54eb02a0af8945992a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4850,7 +4850,7 @@ GameObject:
   - component: {fileID: 1537961153631656017}
   - component: {fileID: -297581206698434419}
   m_Layer: 0
-  m_Name: Boid
+  m_Name: Boid2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4865,7 +4865,7 @@ Transform:
   m_GameObject: {fileID: 7720141150843215272}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.1008, y: 0.0556, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4887,7 +4887,7 @@ MonoBehaviour:
   rotationLerpSpeed: 4
   randomNoiseStrength: 0.1
   size: 0.2
-  trailLifetime: 0.2
+  trailLifetime: 1
   orbParticleSystem: {fileID: 8691803697531571945}
   trailParticleSystem: {fileID: 3745931103630552056}
 --- !u!198 &8691803697531571945
@@ -5080,7 +5080,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.38364768, g: 0.38364768, b: 0.38364768, a: 1}
+      maxColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5727,7 +5727,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 15
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -9639,7 +9639,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3340cc701dc4b645bc36820c01ff0dc, type: 2}
+  - {fileID: 2100000, guid: 774cae9e37579b54eb02a0af8945992a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
