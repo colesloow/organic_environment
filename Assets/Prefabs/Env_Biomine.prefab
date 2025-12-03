@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3929510025581414089}
   - component: {fileID: 6632473941913758972}
   m_Layer: 0
-  m_Name: SkySphere_Biomine
+  m_Name: Env_Biomine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
