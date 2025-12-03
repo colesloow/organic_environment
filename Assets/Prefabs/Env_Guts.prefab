@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1756832402761698663}
   - component: {fileID: 5388635218810502347}
   - component: {fileID: 679419914780569064}
-  - component: {fileID: 2460015514559610032}
+  - component: {fileID: 172175133914872258}
   m_Layer: 0
   m_Name: Env_Guts
   m_TagString: Untagged
@@ -117,7 +117,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.45
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5388635218810502347
 MonoBehaviour:
@@ -231,7 +231,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2460015514559610032
+--- !u!114 &172175133914872258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,12 +240,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1358745192822252472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa017709455331b43ae0e8eed226dfb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 440cfacc469d2994c92a26f3550ed8f4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConfineToSphere
+  m_EditorClassIdentifier: Assembly-CSharp::WorldSphereBoundary
   sphereCollider: {fileID: 1756832402761698663}
   targetTransform: {fileID: 0}
-  padding: 20
+  playerWorldState: {fileID: 0}
+  worldId: 1
+  padding: 0
+  mode: 1
+  teleportDestination: {fileID: 0}
+  worldOnExit: 0
 --- !u!1 &2149457430920568619
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +440,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2892269722493433309, guid: d69fdd33fb3305b46ba06a1b1ccdee27, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4773760822916412468, guid: d69fdd33fb3305b46ba06a1b1ccdee27, type: 3}
       propertyPath: m_Name
       value: Heart
@@ -483,6 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleporterTrigger
   teleportDestination: {fileID: 0}
   playerTag: Player
+  targetWorld: 2
 --- !u!1001 &7852577960223112559
 PrefabInstance:
   m_ObjectHideFlags: 0

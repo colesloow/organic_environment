@@ -4,6 +4,7 @@ public class TeleporterTrigger : MonoBehaviour
 {
     [SerializeField] private Transform teleportDestination;
     [SerializeField] private string playerTag = "Player";
+    [SerializeField] private PlayerWorldState.World targetWorld;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,9 +16,16 @@ public class TeleporterTrigger : MonoBehaviour
 
     void Teleport(GameObject player)
     {
-        if (teleportDestination != null)
+        if (teleportDestination == null) return;
+
+        player.transform.position = teleportDestination.position;
+
+        var worldState = player.GetComponent<PlayerWorldState>();
+        if (worldState != null)
         {
-            player.transform.position = teleportDestination.position;
+            worldState.SetWorld(targetWorld);
         }
+
+        Debug.Log($"[TeleporterTrigger] '{name}' -> world {targetWorld} to {teleportDestination.position}");
     }
 }

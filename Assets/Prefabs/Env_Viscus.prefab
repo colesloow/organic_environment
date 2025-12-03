@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2129930792374778027}
   - component: {fileID: 4855351783228515316}
   - component: {fileID: 7235872250254960587}
-  - component: {fileID: 6500621593739014465}
+  - component: {fileID: 4331871572477967946}
   m_Layer: 0
   m_Name: Env_Viscus
   m_TagString: Untagged
@@ -131,7 +131,7 @@ MonoBehaviour:
   Area: {fileID: 4855351783228515316}
   Player: {fileID: 0}
   audioSource: {fileID: 4639317334790643010}
---- !u!114 &6500621593739014465
+--- !u!114 &4331871572477967946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,12 +140,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1685491782080855291}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa017709455331b43ae0e8eed226dfb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 440cfacc469d2994c92a26f3550ed8f4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConfineToSphere
+  m_EditorClassIdentifier: Assembly-CSharp::WorldSphereBoundary
   sphereCollider: {fileID: 4855351783228515316}
   targetTransform: {fileID: 0}
+  playerWorldState: {fileID: 0}
+  worldId: 0
   padding: 20
+  mode: 0
+  teleportDestination: {fileID: 0}
+  worldOnExit: 0
 --- !u!1 &3518092210603496308
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleporterTrigger
   teleportDestination: {fileID: 0}
   playerTag: Player
+  targetWorld: 1
 --- !u!1001 &6448405597270374757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -470,6 +476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleporterTrigger
   teleportDestination: {fileID: 0}
   playerTag: Player
+  targetWorld: 1
 --- !u!4 &8923497232314542689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2498362882421084932, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
