@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7846644991711638491}
   - component: {fileID: 2588413150754998693}
   m_Layer: 0
-  m_Name: SphereMesh_Guts
+  m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

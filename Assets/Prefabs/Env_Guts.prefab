@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1756832402761698663}
   - component: {fileID: 5553452587488963283}
   m_Layer: 0
-  m_Name: SkySphere_Guts
+  m_Name: Env_Guts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
