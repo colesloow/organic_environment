@@ -4,28 +4,20 @@ public class TeleporterTrigger : MonoBehaviour
 {
     [SerializeField] private Transform teleportDestination;
     [SerializeField] private string playerTag = "Player";
+
+    [Header("Target world")]
     [SerializeField] private PlayerWorldState.World targetWorld;
+
+    [Header("Transition")]
+    [SerializeField] private WorldTransitionController transitionController;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(playerTag))
-        {
-            Teleport(other.gameObject);
-        }
-    }
+        if (!other.CompareTag(playerTag)) return;
 
-    void Teleport(GameObject player)
-    {
-        if (teleportDestination == null) return;
+        if (teleportDestination == null || transitionController == null) return;
 
-        player.transform.position = teleportDestination.position;
-
-        var worldState = player.GetComponent<PlayerWorldState>();
-        if (worldState != null)
-        {
-            worldState.SetWorld(targetWorld);
-        }
-
-        Debug.Log($"[TeleporterTrigger] '{name}' -> world {targetWorld} to {teleportDestination.position}");
+        // Launch smooth transition
+        transitionController.StartWorldTransition(targetWorld, teleportDestination.position);
     }
 }
