@@ -612,6 +612,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Guts
       objectReference: {fileID: 0}
+    - target: {fileID: 2666420437663442318, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 19cfe8500f60dc442b6b7fafd568174c, type: 3}
+    - target: {fileID: 2666420437663442318, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6630911913625160918, guid: 5df4669acb80e17418ec7b40b036ccf7, type: 2}
     - target: {fileID: 5388635218810502347, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: Player
       value: 
