@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerWorldState : MonoBehaviour
@@ -16,6 +17,9 @@ public class PlayerWorldState : MonoBehaviour
     [SerializeField] private Transform viscusSpawn;
     [SerializeField] private Transform gutsSpawn;
     [SerializeField] private Transform biomineSpawn;
+
+    // Event fired whenever the world changes
+    public event Action<World> WorldChanged;
 
     private World currentWorld;
     public World CurrentWorld => currentWorld;
@@ -37,8 +41,13 @@ public class PlayerWorldState : MonoBehaviour
 
     public void SetWorld(World newWorld)
     {
+        if (newWorld == currentWorld)
+            return;
+
         currentWorld = newWorld;
         Debug.Log($"[PlayerWorldState] Current world: {currentWorld}");
+
+        WorldChanged?.Invoke(currentWorld);
     }
 
     private Transform GetSpawnForWorld(World world)
