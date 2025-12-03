@@ -5,6 +5,27 @@ using UnityEngine.Audio;
 public class VolumeManager : MonoBehaviour
 {
     public AudioMixer mixer;
+    public PlayerWorldState playerWorldState;
+
+    private void Start()
+    {
+        playerWorldState.WorldChanged += OnWorldChanged;
+    }
+
+    private void OnDisable()
+    {
+        playerWorldState.WorldChanged -= OnWorldChanged;
+    }
+
+    private void OnWorldChanged(PlayerWorldState.World world)
+    {
+        switch(world)
+        {
+            case PlayerWorldState.World.Guts: EnterGuts(); break;
+            case PlayerWorldState.World.Biomine: EnterBiomine(); break;
+            case PlayerWorldState.World.Viscus: EnterViscus(); break;
+        }
+    }
 
     void SetVolume(string name, float volume)
     {
