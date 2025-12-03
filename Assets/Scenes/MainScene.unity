@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!82 &254656211 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2666420437663442318, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
-  m_PrefabInstance: {fileID: 3977627094411463531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,11 +256,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!82 &333651475 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4346598246780130170, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-  m_PrefabInstance: {fileID: 2669749209564834451}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,9 +445,10 @@ GameObject:
   - component: {fileID: 851686276}
   - component: {fileID: 851686277}
   - component: {fileID: 851686278}
+  - component: {fileID: 851686279}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,6 +552,22 @@ MonoBehaviour:
   point1: {fileID: 3977627094411463532}
   point2: {fileID: 8271561726058247605}
   point3: {fileID: 2669749209564834452}
+--- !u!114 &851686279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851686273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c69e94926d76945b2c79a3b441fb36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerWorldState
+  startWorld: 0
+  viscusSpawn: {fileID: 8271561726058247605}
+  gutsSpawn: {fileID: 3977627094411463532}
+  biomineSpawn: {fileID: 2669749209564834452}
 --- !u!1001 &2669749209564834451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -617,46 +624,18 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 851686273}
-    - target: {fileID: 3929510025581414089, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: AmbientSound
-      value: 
-      objectReference: {fileID: 2669749209564834453}
-    - target: {fileID: 3929510025581414089, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: BackgroundMusic
-      value: 
-      objectReference: {fileID: 333651475}
-    - target: {fileID: 6632473941913758972, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
+    - target: {fileID: 7392976180529776752, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 851686274}
-    - target: {fileID: 8122584929646530569, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 7392976180529776752, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
+      propertyPath: playerWorldState
+      value: 
+      objectReference: {fileID: 851686279}
+    - target: {fileID: 7392976180529776752, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 3977627094411463532}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -667,11 +646,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1612226089499926076, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
   m_PrefabInstance: {fileID: 2669749209564834451}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &2669749209564834453 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1722603392585695490, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-  m_PrefabInstance: {fileID: 2669749209564834451}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3977627094411463531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -680,26 +654,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 172175133914872258, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 851686274}
+    - target: {fileID: 172175133914872258, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: playerWorldState
+      value: 
+      objectReference: {fileID: 851686279}
+    - target: {fileID: 172175133914872258, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 8271561726058247605}
     - target: {fileID: 1358745192822252472, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: m_Name
       value: Env_Guts
       objectReference: {fileID: 0}
+    - target: {fileID: 5354227598647552151, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 2669749209564834452}
     - target: {fileID: 5388635218810502347, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 851686273}
-    - target: {fileID: 5388635218810502347, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
-      propertyPath: AmbientSound
-      value: 
-      objectReference: {fileID: 3977627094411463533}
-    - target: {fileID: 5388635218810502347, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
-      propertyPath: BackgroundMusic
-      value: 
-      objectReference: {fileID: 254656211}
-    - target: {fileID: 5553452587488963283, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
-      propertyPath: targetTransform
-      value: 
-      objectReference: {fileID: 851686274}
     - target: {fileID: 7176487984364980423, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -750,11 +728,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7176487984364980423, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
   m_PrefabInstance: {fileID: 3977627094411463531}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &3977627094411463533 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2043254920257095546, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
-  m_PrefabInstance: {fileID: 3977627094411463531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8271561726058247604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -767,6 +740,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Viscus
       objectReference: {fileID: 0}
+    - target: {fileID: 4331871572477967946, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 851686274}
+    - target: {fileID: 4331871572477967946, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
+      propertyPath: playerWorldState
+      value: 
+      objectReference: {fileID: 851686279}
+    - target: {fileID: 4391156200766428526, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 3977627094411463532}
     - target: {fileID: 6864374573411819655, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70
@@ -811,6 +796,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 851686273}
+    - target: {fileID: 8047712810751852517, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 3977627094411463532}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

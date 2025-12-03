@@ -129,8 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AmbienceSound
   Area: {fileID: 8122584929646530569}
   Player: {fileID: 0}
-  BackgroundMusic: {fileID: 0}
-  AmbientSound: {fileID: 0}
+  BackgroundMusic: {fileID: 4346598246780130170}
+  AmbientSound: {fileID: 1722603392585695490}
 --- !u!114 &7392976180529776752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   targetTransform: {fileID: 0}
   playerWorldState: {fileID: 0}
   worldId: 2
-  padding: 0
+  padding: 3
   mode: 1
   teleportDestination: {fileID: 0}
   worldOnExit: 1
