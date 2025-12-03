@@ -1,3 +1,7 @@
+// Raymarched 3D Heart Shader
+// Procedural heightfields and PBR shading
+// Inspired by: https://www.shadertoy.com/view/ctcGR8
+
 Shader "Universal Render Pipeline/RaymarchedHeart3D"
 {
     Properties
