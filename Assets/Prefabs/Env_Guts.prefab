@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6459092347002379179}
   - component: {fileID: 3544542184851321223}
   - component: {fileID: 1756832402761698663}
-  - component: {fileID: 5553452587488963283}
   - component: {fileID: 5388635218810502347}
   - component: {fileID: 679419914780569064}
+  - component: {fileID: 2460015514559610032}
   m_Layer: 0
   m_Name: Env_Guts
   m_TagString: Untagged
@@ -117,23 +117,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.45
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5553452587488963283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358745192822252472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa017709455331b43ae0e8eed226dfb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  sphereCollider: {fileID: 1756832402761698663}
-  targetTransform: {fileID: 0}
-  padding: 5
 --- !u!114 &5388635218810502347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +231,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2460015514559610032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358745192822252472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa017709455331b43ae0e8eed226dfb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfineToSphere
+  sphereCollider: {fileID: 1756832402761698663}
+  targetTransform: {fileID: 0}
+  padding: 20
 --- !u!1 &2149457430920568619
 GameObject:
   m_ObjectHideFlags: 0

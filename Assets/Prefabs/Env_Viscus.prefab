@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 158291345495575226}
   - component: {fileID: 2129930792374778027}
   - component: {fileID: 4855351783228515316}
-  - component: {fileID: 322868343624489637}
   - component: {fileID: 7235872250254960587}
+  - component: {fileID: 6500621593739014465}
   m_Layer: 0
   m_Name: Env_Viscus
   m_TagString: Untagged
@@ -116,21 +116,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &322868343624489637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685491782080855291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa017709455331b43ae0e8eed226dfb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConfineToSphere
-  sphereCollider: {fileID: 4855351783228515316}
-  targetTransform: {fileID: 0}
-  padding: 5
 --- !u!114 &7235872250254960587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +131,21 @@ MonoBehaviour:
   Area: {fileID: 4855351783228515316}
   Player: {fileID: 0}
   audioSource: {fileID: 4639317334790643010}
+--- !u!114 &6500621593739014465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685491782080855291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa017709455331b43ae0e8eed226dfb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfineToSphere
+  sphereCollider: {fileID: 4855351783228515316}
+  targetTransform: {fileID: 0}
+  padding: 20
 --- !u!1 &3518092210603496308
 GameObject:
   m_ObjectHideFlags: 0

@@ -603,42 +603,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Biomine
       objectReference: {fileID: 0}
+    - target: {fileID: 3467611202556643908, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 851686274}
     - target: {fileID: 3929510025581414089, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 851686273}
-    - target: {fileID: 6632473941913758972, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: targetTransform
-      value: 
-      objectReference: {fileID: 851686274}
-    - target: {fileID: 8122584929646530569, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853937382250658623, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -661,18 +633,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Guts
       objectReference: {fileID: 0}
+    - target: {fileID: 2460015514559610032, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 851686274}
     - target: {fileID: 5354227598647552151, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: teleportDestination
       value: 
-      objectReference: {fileID: 8271561726058247605}
+      objectReference: {fileID: 2669749209564834452}
     - target: {fileID: 5388635218810502347, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 851686273}
-    - target: {fileID: 5553452587488963283, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
-      propertyPath: targetTransform
-      value: 
-      objectReference: {fileID: 851686274}
     - target: {fileID: 7176487984364980423, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -731,10 +703,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 322868343624489637, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: targetTransform
-      value: 
-      objectReference: {fileID: 851686274}
     - target: {fileID: 1685491782080855291, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: m_Name
       value: Env_Viscus
@@ -742,7 +710,11 @@ PrefabInstance:
     - target: {fileID: 4391156200766428526, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: teleportDestination
       value: 
-      objectReference: {fileID: 2669749209564834452}
+      objectReference: {fileID: 3977627094411463532}
+    - target: {fileID: 6500621593739014465, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 851686274}
     - target: {fileID: 6864374573411819655, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70
@@ -790,7 +762,7 @@ PrefabInstance:
     - target: {fileID: 8047712810751852517, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: teleportDestination
       value: 
-      objectReference: {fileID: 2669749209564834452}
+      objectReference: {fileID: 3977627094411463532}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -808,6 +780,6 @@ SceneRoots:
   - {fileID: 851686274}
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 3977627094411463531}
   - {fileID: 8271561726058247604}
+  - {fileID: 3977627094411463531}
   - {fileID: 2669749209564834451}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6489377219478761521}
   - component: {fileID: 8122584929646530569}
   - component: {fileID: 3929510025581414089}
-  - component: {fileID: 6632473941913758972}
+  - component: {fileID: 3467611202556643908}
   m_Layer: 0
   m_Name: Env_Biomine
   m_TagString: Untagged
@@ -108,11 +108,11 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.45
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3929510025581414089
 MonoBehaviour:
@@ -129,7 +129,7 @@ MonoBehaviour:
   Area: {fileID: 8122584929646530569}
   Player: {fileID: 0}
   audioSource: {fileID: 4346598246780130170}
---- !u!114 &6632473941913758972
+--- !u!114 &3467611202556643908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConfineToSphere
   sphereCollider: {fileID: 8122584929646530569}
   targetTransform: {fileID: 0}
-  padding: 5
+  padding: 20
 --- !u!1 &9001148977525448795
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,8 +170,8 @@ Transform:
   m_GameObject: {fileID: 9001148977525448795}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9191394, y: 0.22180401, z: 0.31686318}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1612226089499926076}
