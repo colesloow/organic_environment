@@ -1,7 +1,7 @@
 // Organic, procedural shader simulating "guts" or "internal organs" appearance.
 // Adapted from a Shadertoy shader: https://www.shadertoy.com/view/clXXDl
 
-Shader "Custom/OrganicGuts"
+Shader "Custom/GutsTriplanar"
 {
     Properties
     {

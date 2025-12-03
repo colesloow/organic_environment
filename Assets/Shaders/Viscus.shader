@@ -1,7 +1,7 @@
 // Procedural, triplanar viscus shader
 // Inspiration: https://www.shadertoy.com/view/tt2XDV
 
-Shader "Custom/ProceduralGutsTriplanar"
+Shader "Custom/ViscusTriplanar"
 {
     Properties
     {
