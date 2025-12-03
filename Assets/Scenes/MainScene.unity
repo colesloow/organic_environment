@@ -620,6 +620,10 @@ PrefabInstance:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 851686274}
+    - target: {fileID: 6029531853146634932, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: m_Radius
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 7176487984364980423, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -680,10 +684,6 @@ PrefabInstance:
     - target: {fileID: 1685491782080855291, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: m_Name
       value: Env_Viscus
-      objectReference: {fileID: 0}
-    - target: {fileID: 4639317334790643010, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_Resource
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6864374573411819655, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: m_LocalPosition.x
