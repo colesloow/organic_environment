@@ -19,7 +19,6 @@ public class BoidManager : MonoBehaviour
     [SerializeField, Range(0f, 5f)] private float separationWeight = 1.5f;
 
     [Header("Bounds (living area)")]
-    [SerializeField] private Vector3 boundsCenter = Vector3.zero;
     [SerializeField] private Vector3 boundsSize = new Vector3(30f, 15f, 30f);
     [SerializeField] private float boundsWeight = 2f;
 
@@ -34,15 +33,12 @@ public class BoidManager : MonoBehaviour
     public float CohesionWeight => cohesionWeight;
     public float AlignmentWeight => alignmentWeight;
     public float SeparationWeight => separationWeight;
-    public Vector3 BoundsCenter => boundsCenter;
+
+    // Bounds center = GameObject position
+    public Vector3 BoundsCenter => transform.position;
+
     public Vector3 BoundsSize => boundsSize;
     public float BoundsWeight => boundsWeight;
-
-    private void Reset()
-    {
-        // By default, use this GameObject's position as bounds center
-        boundsCenter = transform.position;
-    }
 
     private void Start()
     {
@@ -56,7 +52,6 @@ public class BoidManager : MonoBehaviour
                 0.3f
             );
 
-            // Instantiate as child of this manager
             Boid newBoid = Instantiate(boidPrefab, spawnPos, spawnRot, transform);
             newBoid.Manager = this;
             boids.Add(newBoid);
@@ -65,8 +60,8 @@ public class BoidManager : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        // Draw bounds box in the editor
+        // Draw bounds box in the editor around the manager
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireCube(boundsCenter, boundsSize);
+        Gizmos.DrawWireCube(transform.position, boundsSize);
     }
 }
