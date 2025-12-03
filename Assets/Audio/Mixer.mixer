@@ -52,6 +52,25 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &-4967032937007424174
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Viscus
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 48715433ed695044eafd924558f1f41d
+  m_Children: []
+  m_Volume: eb3456be3adbae64eb1d406c0ffc1429
+  m_Pitch: 396c96987df12ad41bce109213e08a51
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 6102319276335788343}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &-4025431532723603519
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -113,6 +132,7 @@ AudioMixerController:
     - cd2ff4547c636624da53ac90ebee768b
     - f56d3259f396a2448b61cc20b83f0aa8
     - f9f40b61cbcd67140b21f3538b5df104
+    - 48715433ed695044eafd924558f1f41d
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -130,6 +150,7 @@ AudioMixerGroupController:
   - {fileID: -4025431532723603519}
   - {fileID: -9124973132298146424}
   - {fileID: -788416687965264659}
+  - {fileID: -4967032937007424174}
   m_Volume: f2ee667e2b84df04c8e5b6ca6e00e5dd
   m_Pitch: 51a13ebc5c6d0b44e94f88c04a00fe68
   m_Send: 00000000000000000000000000000000
@@ -179,6 +200,20 @@ AudioMixerEffectController:
   m_EffectID: ec1a7a8c77c19394c9e737fb7bc0cbe0
   m_EffectName: Attenuation
   m_MixLevel: 83e646bb76a390647a6c0204ce178619
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &6102319276335788343
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 21fd929b898cbc7439f521d857d18518
+  m_EffectName: Attenuation
+  m_MixLevel: cdb0fe50200aeec43a5099735e22fd5a
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
