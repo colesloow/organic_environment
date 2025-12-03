@@ -110,7 +110,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -172,8 +172,8 @@ Transform:
   m_GameObject: {fileID: 3518092210603496308}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8808606, y: 0.22180401, z: 0.31686318}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6864374573411819655}
@@ -189,7 +189,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6630911913625160918, guid: 5df4669acb80e17418ec7b40b036ccf7, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 68b85951952e14447a67efd967f82ea6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
@@ -339,16 +339,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Berry (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6964692844106740166, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5515967362355624044, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8047712810751852517}
   m_SourcePrefab: {fileID: 100100000, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
 --- !u!4 &4492815532024162492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2498362882421084932, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
   m_PrefabInstance: {fileID: 2085826479892118456}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5800353979720811476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5515967362355624044, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
+  m_PrefabInstance: {fileID: 2085826479892118456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8047712810751852517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800353979720811476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8061d3942ace5c843b907fd41ba25d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeleporterTrigger
+  teleportDestination: {fileID: 0}
+  playerTag: Player
 --- !u!1001 &6448405597270374757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -413,11 +439,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Berry
       objectReference: {fileID: 0}
+    - target: {fileID: 6964692844106740166, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5515967362355624044, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4391156200766428526}
   m_SourcePrefab: {fileID: 100100000, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
+--- !u!1 &1581310676380025097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5515967362355624044, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}
+  m_PrefabInstance: {fileID: 6448405597270374757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4391156200766428526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581310676380025097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8061d3942ace5c843b907fd41ba25d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeleporterTrigger
+  teleportDestination: {fileID: 0}
+  playerTag: Player
 --- !u!4 &8923497232314542689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2498362882421084932, guid: c4eec8ff6983e4f48ac3c7b179bf9617, type: 3}

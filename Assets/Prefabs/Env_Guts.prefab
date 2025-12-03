@@ -447,16 +447,42 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 7846644991711638491, guid: d69fdd33fb3305b46ba06a1b1ccdee27, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4773760822916412468, guid: d69fdd33fb3305b46ba06a1b1ccdee27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5354227598647552151}
   m_SourcePrefab: {fileID: 100100000, guid: d69fdd33fb3305b46ba06a1b1ccdee27, type: 3}
 --- !u!4 &1687361880235080882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2892269722493433309, guid: d69fdd33fb3305b46ba06a1b1ccdee27, type: 3}
   m_PrefabInstance: {fileID: 4560406229505329519}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9040447802152271195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4773760822916412468, guid: d69fdd33fb3305b46ba06a1b1ccdee27, type: 3}
+  m_PrefabInstance: {fileID: 4560406229505329519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5354227598647552151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9040447802152271195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8061d3942ace5c843b907fd41ba25d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeleporterTrigger
+  teleportDestination: {fileID: 0}
+  playerTag: Player
 --- !u!1001 &7852577960223112559
 PrefabInstance:
   m_ObjectHideFlags: 0

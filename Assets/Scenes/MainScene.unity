@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 851686278}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -661,6 +661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Guts
       objectReference: {fileID: 0}
+    - target: {fileID: 5354227598647552151, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 8271561726058247605}
     - target: {fileID: 5388635218810502347, guid: 78b87b2500e08394c909e1824efd238b, type: 3}
       propertyPath: Player
       value: 
@@ -735,14 +739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Viscus
       objectReference: {fileID: 0}
-    - target: {fileID: 4639317334790643010, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_Resource
+    - target: {fileID: 4391156200766428526, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
+      propertyPath: teleportDestination
       value: 
-      objectReference: {fileID: 8300000, guid: 68b85951952e14447a67efd967f82ea6, type: 3}
-    - target: {fileID: 4855351783228515316, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2669749209564834452}
     - target: {fileID: 6864374573411819655, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70
@@ -787,30 +787,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 851686273}
-    - target: {fileID: 7464025600867949434, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7464025600867949434, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7464025600867949434, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7464025600867949434, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7464025600867949434, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7464025600867949434, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 8047712810751852517, guid: 886d55fbc9e256b4f91ad78d5cf5b34f, type: 3}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 2669749209564834452}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
