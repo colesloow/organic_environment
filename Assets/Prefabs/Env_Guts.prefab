@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3544542184851321223}
   - component: {fileID: 1756832402761698663}
   - component: {fileID: 5388635218810502347}
-  - component: {fileID: 679419914780569064}
   - component: {fileID: 172175133914872258}
   m_Layer: 0
   m_Name: Env_Guts
@@ -36,6 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3288152783901610322}
+  - {fileID: 3802010957742750565}
   - {fileID: 3599127468868647195}
   - {fileID: 3731714698807247639}
   - {fileID: 1687361880235080882}
@@ -133,20 +133,73 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AmbienceSound
   Area: {fileID: 1756832402761698663}
   Player: {fileID: 0}
-  audioSource: {fileID: 2666420437663442318}
---- !u!82 &679419914780569064
-AudioSource:
+  BackgroundMusic: {fileID: 0}
+  AmbientSound: {fileID: 0}
+--- !u!114 &172175133914872258
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358745192822252472}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440cfacc469d2994c92a26f3550ed8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldSphereBoundary
+  sphereCollider: {fileID: 1756832402761698663}
+  targetTransform: {fileID: 0}
+  playerWorldState: {fileID: 0}
+  worldId: 1
+  padding: 0
+  mode: 1
+  teleportDestination: {fileID: 0}
+  worldOnExit: 0
+--- !u!1 &2149457430920568619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3288152783901610322}
+  - component: {fileID: 2666420437663442318}
+  m_Layer: 0
+  m_Name: Background Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3288152783901610322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149457430920568619}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7176487984364980423}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2666420437663442318
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149457430920568619}
+  m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -4025431532723603519, guid: 5df4669acb80e17418ec7b40b036ccf7, type: 2}
+  OutputAudioMixerGroup: {fileID: -6630911913625160918, guid: 5df4669acb80e17418ec7b40b036ccf7, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 62b1be29c48f059468bd32a9c2337d58, type: 3}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: 19cfe8500f60dc442b6b7fafd568174c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
@@ -231,27 +284,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &172175133914872258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358745192822252472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 440cfacc469d2994c92a26f3550ed8f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WorldSphereBoundary
-  sphereCollider: {fileID: 1756832402761698663}
-  targetTransform: {fileID: 0}
-  playerWorldState: {fileID: 0}
-  worldId: 1
-  padding: 0
-  mode: 1
-  teleportDestination: {fileID: 0}
-  worldOnExit: 0
---- !u!1 &2149457430920568619
+--- !u!1 &6492145228918535661
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,22 +292,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3288152783901610322}
-  - component: {fileID: 2666420437663442318}
+  - component: {fileID: 3802010957742750565}
+  - component: {fileID: 2043254920257095546}
   m_Layer: 0
-  m_Name: Background Music
+  m_Name: AmbientSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3288152783901610322
+--- !u!4 &3802010957742750565
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149457430920568619}
+  m_GameObject: {fileID: 6492145228918535661}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -283,18 +316,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7176487984364980423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2666420437663442318
+--- !u!82 &2043254920257095546
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149457430920568619}
+  m_GameObject: {fileID: 6492145228918535661}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6630911913625160918, guid: 5df4669acb80e17418ec7b40b036ccf7, type: 2}
+  OutputAudioMixerGroup: {fileID: -4025431532723603519, guid: 5df4669acb80e17418ec7b40b036ccf7, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 19cfe8500f60dc442b6b7fafd568174c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 62b1be29c48f059468bd32a9c2337d58, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
