@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8122584929646530569}
   - component: {fileID: 3929510025581414089}
   - component: {fileID: 7392976180529776752}
+  - component: {fileID: 5971284572713886117}
   m_Layer: 0
   m_Name: Env_Biomine
   m_TagString: Untagged
@@ -147,10 +148,29 @@ MonoBehaviour:
   targetTransform: {fileID: 0}
   playerWorldState: {fileID: 0}
   worldId: 2
-  padding: 3
+  padding: 5
   mode: 1
   teleportDestination: {fileID: 0}
   worldOnExit: 1
+  transitionController: {fileID: 0}
+--- !u!114 &5971284572713886117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2867251773033598390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658d94a2406b5454492b7ce71286cb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BiomineWorldVisual
+  playerWorldState: {fileID: 0}
+  biomineMaterial: {fileID: 2100000, guid: 1edf7bec8703ac0479cfaadf95f3f1af, type: 2}
+  propertyName: _InternalWorldScale
+  enterValue: 0.6
+  exitValue: 0
+  fadeDuration: 1
 --- !u!1 &6285419847910364131
 GameObject:
   m_ObjectHideFlags: 0

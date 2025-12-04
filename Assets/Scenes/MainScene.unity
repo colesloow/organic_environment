@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VolumeManager
   mixer: {fileID: 24100000, guid: 5df4669acb80e17418ec7b40b036ccf7, type: 2}
   playerWorldState: {fileID: 851686279}
+  fadeDuration: 1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,10 +972,18 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 851686273}
-    - target: {fileID: 7392976180529776752, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
-      propertyPath: padding
+    - target: {fileID: 5971284572713886117, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
+      propertyPath: fadeDuration
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5971284572713886117, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
+      propertyPath: propertyName
+      value: _WorldScale
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971284572713886117, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
+      propertyPath: playerWorldState
+      value: 
+      objectReference: {fileID: 851686279}
     - target: {fileID: 7392976180529776752, guid: 3298cfa07256d1a49a7702ad5817b8f6, type: 3}
       propertyPath: targetTransform
       value: 
